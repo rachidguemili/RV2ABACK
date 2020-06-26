@@ -36,13 +36,15 @@ public class SMSService {
 	}
 
 	public Message send() {
-		Twilio.init("ACce572c1b0688ed980807f9871cb8866f", "685f90a290f07af112832addb464f426");
+
+
+		Twilio.init("", "");
 
 
 
-		Message message = Message.creator(new PhoneNumber("+33 6 05 56 7772"),
-				new PhoneNumber("+12056971633"),
-				"Ceci est un message de votre médecin")
+		Message message = Message.creator(new PhoneNumber("+33 6 63 11 25 69"),
+				new PhoneNumber("+12054798248"),
+				"Bonjour parlons de votre bilan de sante sur le chat http://localhost:4200/chat/1")
 				.create();
 
 		//System.out.println("here is my id:"+message.getSid());// Unique resource ID created to manage this transaction

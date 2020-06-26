@@ -33,5 +33,4 @@ public class DiscussionController {
 
 		return discussionService.save(discussion);
 	}
-
 }
